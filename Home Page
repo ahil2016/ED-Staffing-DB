@@ -425,7 +425,7 @@ z-index: 11;
         } 
         .card-body {
 		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
-		padding: 34px 48px 2px 44px;
+		padding: 29px 21px 4px 18px;
 		position: relative;
 		top: -30px;
 		background-color: #fff;
@@ -469,7 +469,7 @@ z-index: 11;
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid #ccc;
-            padding: 3px 0px 2px 0px;
+            padding: 15px 0px 4px 0px;
         }
         .val-row:last-child {
             border-bottom: 0px;
@@ -894,7 +894,7 @@ display: inline-block;
 }
 
 .tnure-body{
-    display: flex;
+    //display: flex;
     background: #fff;
     padding-top: 45px;
     padding-bottom: 16px;
@@ -903,9 +903,10 @@ display: inline-block;
     border-radius: 8px;
     position: relative;
     top: -16px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
     height:150px;
+    margin-left:10px;
     
 }
 .tenure-bar-container, .diversity-container {
@@ -1617,7 +1618,7 @@ flex-wrap:wrap;
                         </div>
                         <div class="card-body">
                             <div class="val-row">
-                                <span class="val-text">CDCS</span>
+                                <span class="val-text">Line Mangers</span>
                                 <span class="val">
                                     <span><SpotfireControl id="a04dcd1315494e248e7560b1d1ea413e" /></span>
                                    
@@ -1625,7 +1626,7 @@ flex-wrap:wrap;
                             </div>
 
                             <div class="val-row">
-                                <span class="val-text">CTTS</span>
+                                <span class="val-text">Individual Contributors</span>
                                 <span class="val">
                                     <span><SpotfireControl id="41220175f38446b18c3907b60c7fe627" /></span>
                                     
@@ -1633,29 +1634,15 @@ flex-wrap:wrap;
 
                             </div>
 			     <div class="val-row">
-                                <span class="val-text">CORP</span>
+                                <span class="val-text">Line Manger to Headcount</span>
                                 <span class="val">
                                     <span><SpotfireControl id="37d29f779d5241deb660419b08cfb0d9" /></span>
                                     
                                 </span>
 
                             </div>
-                            <div class="val-row">
-                                <span class="val-text">Early Dev</span>
-                                <span class="val">
-                                    <span><SpotfireControl id="af8d66c7c62c4125850123df7c3d43c7" /></span>
-                                    
-                                </span>
 
-                            </div>
-                            <div class="val-row">
-                                <span class="val-text">GCO</span>
-                                <span class="val">
-                                    <span><SpotfireControl id="347326fca1764153ba83d712ad5f14e7" /></span>
-                                    
-                                </span>
-
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -1703,19 +1690,7 @@ flex-wrap:wrap;
                         </div>
                     </div>
 
-                    <div class="location-metric-item">
-                            <div class="circle loc4Border">
-				<SpotfireControl id="673c70a03125432da1d45e40fd18e062" />
-				</div>
-                            <div class="circle-arrow"></div>
-                        <div class="rectanle-wrapper">
-                            <div class="rectangle loc4Bg">
-				Chennai
-			 </div>
-                            <div class="rectangle-arrow"></div>
-                        </div>
 
-                    </div>
                     </div>
                 </div>
 </div>
@@ -1725,11 +1700,11 @@ flex-wrap:wrap;
 <div class="width-helper">
 	<div class="tenure-container">
 	<div class="tenure-headings">
-		<div class="tenure-heading1 flex60">
+		<div class="tenure-heading1">
 		
 		<span class="displayInlineBlock tenure-title-color">Tenure Range(Years)</span>
 		</div>
-		<div class="tenure-heading2 flex40"><span class="displayInlineBlock divercity-title-color">Diversity Mix</span></div>
+		
 	</div>
 <div class="tnure-body">
 <div class="tenure-bar-container flexWrap flex60">
@@ -1778,30 +1753,7 @@ flex-wrap:wrap;
 </div>
 </div>
 
-<div class="diversity-container flex40">
-	<div id="femaleTenureVal" class="diversity-item">
-		<div class="diversity-img-container">
-			<div class="diversity-img-bg divercity-background-female">&nbsp;</div>
-			
-			<img src="f23e9803fbe843e9a94cfea4848ebae4.png" style="border: 0; width: 47px; height: 80px;"/>
-		</div>
-		<div class="diver-val">
-			&nbsp&nbsp&nbsp<SpotfireControl id="c8338f62b82042c5b170eb180dd6c745" />
-		</div>
-	</div>
 
-	<div id="maleTenureVal" class="diversity-item">
-		<div class="diversity-img-container">
-			<div class="diversity-img-bg divercity-background-male">&nbsp;</div>
-			
-			<img src="c4084ab1292942d69d63a9c842175ee2.png" style="border: 0; width: 47px; height: 80px;"/>
-		</div>
-		<div class="diver-val">
-			&nbsp&nbsp&nbsp<SpotfireControl id="bb1fe31281de4e9a8da08805473eb3bd" />
-		</div>
-	</div>
-	
-</div>
 </div>
 	</div>
 </div>
@@ -2302,6 +2254,7 @@ Open positions pyramid starts -->
                                 </span>
                             </div>
                         </div>
+<!--
                         <div class="card-body">
                             <div class="val-row">
                                 <span class="val-text">CDCS</span>
@@ -2342,7 +2295,7 @@ Open positions pyramid starts -->
                                 </span>
 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                <!-- location metrics start -->
 
@@ -2361,8 +2314,7 @@ Open positions pyramid starts -->
 
                 <span class="displayInlineBlock tenure-title-color">Tenure Range (Years)</span>
             </div>
-            <div class="tenure-heading2 flex40"><span
-                    class="displayInlineBlock divercity-title-color">Diversity Mix</span></div>
+
         </div>
         <div class="tnure-body attr-tenure-height">
             <div class="tenure-bar-container flexWrap flex60 attr-tenure-bar-position">
@@ -2426,28 +2378,6 @@ Open positions pyramid starts -->
                 </div>
             </div>
 
-            <div class="diversity-container flex40">
-                <div id="femaleAttrVal" class="diversity-item">
-                    <div class="diversity-img-container">
-                        <div class="diversity-img-bg divercity-background-female">&nbsp;</div>
-                        <img src="f23e9803fbe843e9a94cfea4848ebae4.png" style="border: 0; width: 47px; height: 80px;"/>
-                    </div>
-                    <div class="diver-val">
-                         &nbsp&nbsp<SpotfireControl id="524fc4af88704e9b9fddb52059e57f46" />
-                    </div>
-                </div>
-
-                <div id="maleAttrVal" class="diversity-item">
-                    <div class="diversity-img-container">
-                        <div class="diversity-img-bg divercity-background-male">&nbsp;</div>
-                        <img src="c4084ab1292942d69d63a9c842175ee2.png" style="border: 0; width: 47px; height: 80px;"/>
-                    </div>
-                    <div class="diver-val">
-                        &nbsp&nbsp <SpotfireControl id="d8f7fddcf36c4683ac1f507f04be0d34" />
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 </div>
