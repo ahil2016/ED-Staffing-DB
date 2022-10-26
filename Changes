@@ -1,1 +1,64 @@
 
+<!-- linemanager hc metrics start -->
+    <div class="width-helper">
+        <div class="location-metric-container linemanager-container">
+            <!-- <div class="location-metric-heading">Diversity Mix</div> -->
+            <div class="location-metric-wrapper">
+            <div class="linemanager-hc-wrapper">
+                <div class="linemanager-hc-col1">
+                    <div class="line-managers">
+                        <div class="lm-meteric-label">
+                            Line Managers
+                        </div>
+                        <div class="lm-meteric-value">
+                            100
+                        </div>
+                    </div>
+                    <div class="ic">
+                        <div class="lm-meteric-label">
+                            Individual Contributors
+                        </div>
+                        <div class="lm-meteric-value">
+                            100
+                        </div>
+                    </div>
+                </div>
+                <div class="linemanager-hc-col2"></div>
+                <div class="linemanager-hc-col3">
+                    <div class="lm-meteric-label">
+                        Headcount to Manager Ratio
+                    </div>
+                    <div class="lm-meteric-value">
+                        100
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+
+
+            </div>
+        </div>
+</div>
+        <!-- linemanager hc metrics end -->
+        
+        
+        .linemanager-hc-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .linemanager-hc-col2 {
+        width: 1px;
+        background: #000;
+        height: 90%;
+        margin: 0px 12px;
+    }
+    .line-managers {
+        margin-bottom: 6px;
+    }
+    .linemanager-container {
+        margin-top: -2px;
+    }
+        
