@@ -464,12 +464,14 @@ z-index: 11;
 		font-weight:bold;
 		color:#4F4F4F;
 		line-height: 18px;
+		margin-top: 5px;
 	}
         .val-row {
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid #ccc;
             padding: 15px 0px 4px 0px;
+
         }
         .val-row:last-child {
             border-bottom: 0px;
@@ -481,7 +483,16 @@ z-index: 11;
 	    
 	    font-weight:bold;
         }
+.val-border{
+    align-items: center;
+    width: max-content;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    border: 1px dashed #797b85;
+    padding: 4px 11px 4px 11px;
+    border-radius: 8px;
 
+}
 
 
         /* card head styles end*/
@@ -629,7 +640,12 @@ bottom:2px;
 
 
 }
+.gradeCWR{
+	background-color:#F5893A;
+	background: linear-gradient(to right, #e78bad, #e79b9b);
 
+
+}
 
 
 .pyramid-title-color{
@@ -724,6 +740,9 @@ background-color:rgb(0,176,240);
 .width-helper {
 	width: 100%;
 }
+.width-helper-marginTop {
+	margin-top: 30px;
+}
 .location-metric-container {
     margin-top: -20px;
     text-align: center;
@@ -732,7 +751,7 @@ background-color:rgb(0,176,240);
 }
 .location-metric-heading {
     padding: 8px 55px;
-    background: linear-gradient(to top, #5da29c, #24caca);
+    background: linear-gradient(to top, #82bbb6, #5fe3e3);
     border-radius: 4px;
     display: inline-block;
     
@@ -784,13 +803,13 @@ position: relative;
     top: -2px;
 }
 .loc1Border+.circle-arrow {
-    border-top-color: rgb(59, 74, 80);
+    border-top-color: #cfcbae;
 }
 .loc2Border+.circle-arrow {
-    border-top-color: rgb(69,122,199);
+    border-top-color: #a7bcab;
 }
 .loc3Border+.circle-arrow {
-    border-top-color: rgb(79,68,76);
+    border-top-color: #d6ad6f;
 }
 .loc4Border+.circle-arrow {
     border-top-color: rgb(184,179,168);
@@ -811,25 +830,25 @@ position: relative;
     font-weight:bold;
 }
 .loc1Bg {
-    background-color: rgb(59, 74, 80);
+    background-color: #cfcbae;
 }
 .loc2Bg {
-    background-color: rgb(69,122,199);
+    background-color: #a7bcab;
 }
 .loc3Bg {
-    background-color: rgb(79,68,76);
+    background-color: #d6ad6f;
 }
 .loc4Bg {
     background-color: rgb(184,179,168);
 }
 .loc1Border {
-    border: 2px solid rgb(59, 74, 80);
+    border: 2px solid #cfcbae;
 }
 .loc2Border {
-    border: 2px solid rgb(69,122,199);
+    border: 2px solid #a7bcab;
 }
 .loc3Border {
-    border: 2px solid rgb(79,68,76);
+    border: 2px solid #d6ad6f;
 }
 .loc4Border {
     border: 2px solid rgb(184,179,168);
@@ -874,7 +893,7 @@ display: inline-block;
 
 
 .tenure-container {
-    margin-top: -6px;
+    margin-top: 8px;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -966,10 +985,20 @@ background-color: black;
 	align-items: center;
 	justify-content: center;
 }
+
+.headcountDiversity{
+    background: #fff;
+    width: 374px;
+    box-shadow: rgb(204 204 204) 0px 2px 8px 0px, rgb(204 204 204) 0px 2px 6px 0px;
+    border-radius: 8px;
+    padding: 15px;
+    
+
+}
 .diversity-img-container {
 	position: relative;
-    width: 47px;
-    height: 80px;
+	width: 47px;
+	height: 80px;
 	position: relative;
 	overflow: hidden;
 }
@@ -1335,7 +1364,7 @@ flex-wrap:wrap;
 }
 .tenure-legend-color5{
 
-	color: #B2B1A3;
+	color: rgb(192,152,210);
 }
 .tenure-legend-color6{
 
@@ -1440,16 +1469,19 @@ flex-wrap:wrap;
 }
 .headCount-Legend-Color6{
 	color: #28BBDD;
-
-
+}
+.headCount-Legend-ColorCWR{
+	color: rgb(255,171,158);
 }
 /*Headcount Pyramid Legend colors End*/
 
 /* Exit Reasons wrapper height*/
 .exit-reason-height{
     Padding-top:31px;
-    Padding-bottom:92px;
+    Padding-bottom:11px;
 }
+
+
 
     </style>
 </head>
@@ -1470,7 +1502,7 @@ flex-wrap:wrap;
             </div>
 
             <div class="page-title-container">
- India HR People Dashboard - <SpotfireControl id="e99d699590d24ec5a0aa96600cf38431" />
+ Early Development (ED) Recruitment Dashboard - <SpotfireControl id="e99d699590d24ec5a0aa96600cf38431" />
 <Font class=valu1 style="VISIBILITY: hidden;"><SpotfireControl id="3e44952a80bd4fb4af80ec41d619929a" /></Font>
 
 <FONT class=valu11 style="VISIBILITY: hidden"><SpotfireControl id="2d861d6407a045039341dc0ce1bea097" /></FONT>
@@ -1524,7 +1556,7 @@ flex-wrap:wrap;
                 <ul>
                     <li>
                         <span class="menu-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" id="Layer_2" viewBox="0 0 32 32"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><path  class="cls-1" fill="#4a4a4a" d="M30,15a1,1,0,0,1-.58-.19L16,5.23,2.58,14.81a1,1,0,0,1-1.16-1.62l14-10a1,1,0,0,1,1.16,0l14,10A1,1,0,0,1,30,15Z"/><path  class="cls-1" fill="#4a4a4a" d="M5,9A1,1,0,0,1,4,8V4A1,1,0,0,1,5,3H9A1,1,0,0,1,9,5H6V8A1,1,0,0,1,5,9Z"/><path class="cls-1" fill="#4a4a4a" d="M25,29H20a1,1,0,0,1-1-1V21H13v7a1,1,0,0,1-1,1H7a3,3,0,0,1-3-3V16a1,1,0,0,1,2,0V26a1,1,0,0,0,1,1h4V20a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1v7h4a1,1,0,0,0,1-1V16a1,1,0,0,1,2,0V26A3,3,0,0,1,25,29Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#4a4a4a" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
                         </span>
                         <span class="menu-name">Home</span>
                     </li>
@@ -1600,12 +1632,12 @@ flex-wrap:wrap;
             </div>
             <div id="page-content">
                 <div class="content-col">
-		<div class="section-category">Demographics</div>
+		<div class="section-category">Headcount</div>
                     <div class="card-wrapper total-head-count-card">
 
 <!-- Total HC Card Navigation START -->
                         <div id="thc-card-navlink" class="card-head totalHeadcountColor">
-                            <div class="head-text">Headcount (Includes CWR)</div>
+                            <div class="head-text">Total Headcount</div>
 
 <!-- Total HC Card Navigation END -->
 
@@ -1618,7 +1650,7 @@ flex-wrap:wrap;
                         </div>
                         <div class="card-body">
                             <div class="val-row">
-                                <span class="val-text">Line Mangers</span>
+                                <span class="val-text">Regula Staff</span>
                                 <span class="val">
                                     <span><SpotfireControl id="a04dcd1315494e248e7560b1d1ea413e" /></span>
                                    
@@ -1626,25 +1658,29 @@ flex-wrap:wrap;
                             </div>
 
                             <div class="val-row">
-                                <span class="val-text">Individual Contributors</span>
+                                <span class="val-text">Contingent Staff</span>
                                 <span class="val">
                                     <span><SpotfireControl id="41220175f38446b18c3907b60c7fe627" /></span>
                                     
                                 </span>
 
                             </div>
+<!--
 			     <div class="val-row">
-                                <span class="val-text">Line Manger to Headcount</span>
-                                <span class="val">
+                                <span class="val-text">Headcount to Manager Ratio</span>
+                                <span class="val val-border">
                                     <span><SpotfireControl id="37d29f779d5241deb660419b08cfb0d9" /></span>
                                     
                                 </span>
 
                             </div>
-
+-->
                             
                         </div>
                     </div>
+
+
+
 
  <!-- location metrics start -->
 <div class="width-helper">
@@ -1653,7 +1689,7 @@ flex-wrap:wrap;
                     <div class="location-metric-wrapper">
                     <div class="location-metric-item">
                             <div class="circle loc1Border">
-				<SpotfireControl id="3c6f6214cb944ad59d9ee2185acf5de6" />
+				<SpotfireControl id="3c6f6214cb944ad59d9ee2185acf5de6" /> 
 			    </div>
                             <div class="circle-arrow"></div>
                         <div class="rectanle-wrapper">
@@ -1695,6 +1731,33 @@ flex-wrap:wrap;
                 </div>
 </div>
                 <!-- location metrics end -->
+ <!-- Headcount Divdrsity metrics Start -->
+<div class="headcountDiversity"><span class="displayInlineBlock divercity-title-color">Diversity Mix</span>
+<div class="diversity-container tenure-heading2">
+	<div id="femaleNewhireVal" >
+		<div class="diversity-img-container">
+			<div class="diversity-img-bg divercity-background-female">&nbsp;</div>
+			<!--<img src="f23e9803fbe843e9a94cfea4848ebae4.png" style="border: 0; width: 47px; height: 80px;"/> -->
+		</div>
+		<div class="diver-val">
+			&nbsp&nbsp&nbsp<SpotfireControl id="e9ef777122874df889a525979fab4254" />
+		</div>
+	</div>
+
+	<div id="maleNewhireVal" class="diversity-item">
+		<div class="diversity-img-container">
+			<div class="diversity-img-bg divercity-background-male">&nbsp;</div>
+			<!-- <img src="c4084ab1292942d69d63a9c842175ee2.png" style="border: 0; width: 47px; height: 80px;"/> -->
+		</div>
+		<div class="diver-val">
+			&nbsp&nbsp<SpotfireControl id="fc450b3c791f4ce9b51b8ced5ca3e69c" />
+		</div>
+	</div>
+	
+</div>
+</div>
+ <!-- Headcount Diversity metrics end -->
+
 
 <!-- tenure start -->
 <div class="width-helper">
@@ -1792,12 +1855,18 @@ flex-wrap:wrap;
                                     <div class="pyramid-bar grade101">&nbsp;</div>
                                     <div class="right-val text-left"><SpotfireControl id="f65a383636094e99b148f2f717cee411" /></div>
                                 </div>
+				<div id="gradeCWR" class="pyramid-bar-wrapper">
+                                    <div class="left-val text-right"><SpotfireControl id="44f72c7d8b6e445e959897ca0d3c2673" /></div>
+                                    <div class="pyramid-bar gradeCWR">&nbsp;</div>
+                                    <div class="right-val text-left"><SpotfireControl id="2f9da722a7494aefba06ac9be831881d" /></div>
+                                </div>
 				<div class="pyramid-legendSpace">
-				<SpotfireControl id="468aff72038f41439490fbb24e0469c4" /><span class="headCount-Legend-Color1">101 - 108</span> 
-				<SpotfireControl id="956892e8162e4ffcbe6a9878240eddf4" /><span class="headCount-Legend-Color2">109 - 110</span>
-				<SpotfireControl id="4b92614d61394981806878fddfa4cefc" /><span class="headCount-Legend-Color3">111 - 112</span>
-				<SpotfireControl id="a43ff0df803743a8b76dad037d61c7a2" /><span class="headCount-Legend-Color4">113 - 115</span>
-				<SpotfireControl id="dafff78a50164d33a66a164ead7c1b28" /><span class="headCount-Legend-Color5">116+</span>
+				<SpotfireControl id="c30c71096917456da96ed873396983a1" /><span class="headCount-Legend-ColorCWR">CWR</span>
+				<SpotfireControl id="468aff72038f41439490fbb24e0469c4" /><span class="headCount-Legend-Color1">Entry Level</span> 
+				<SpotfireControl id="956892e8162e4ffcbe6a9878240eddf4" /><span class="headCount-Legend-Color2">Mid Career</span>
+				<SpotfireControl id="4b92614d61394981806878fddfa4cefc" /><span class="headCount-Legend-Color3">Sr Manager/ Manager</span>
+				<SpotfireControl id="a43ff0df803743a8b76dad037d61c7a2" /><span class="headCount-Legend-Color4">Directors & Above</span>
+				<SpotfireControl id="dafff78a50164d33a66a164ead7c1b28" /><span class="headCount-Legend-Color5">VP & Above</span>
 
 			   </div>
                             </div>
@@ -2242,22 +2311,31 @@ Open positions pyramid starts -->
 
                 </div>
                 <div class="content-col">
-		<div class="section-category">Attrition Analysis</div>
+		<div class="section-category">Annualized Turnove</div>
                     <div class="card-wrapper total-head-count-card">
                         <div id="attCard-navlink" class="card-head annualizedAttrition">
-                            <div class="head-text">Annualized Attrition</div>
+                            <div class="head-text">Annualized Turnover %</div>
 			    
                             <div class="head-value">
                                 <span><SpotfireControl id="92bde686b83b4ad19996d236a9ed65c1" /></span>
                                 <span class="icon">
+				
+
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" enable-background="new 0 0 32 32" height="32px" id="svg2" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g id="background"><rect fill="none" height="32" width="32"/></g><g id="arrow_x5F_full_x5F_up"><polygon points="2,16 9.999,16 9.999,30 21.999,30 21.999,16 29.999,16 15.999,2  "/></g></svg>
                                 </span>
                             </div>
-                        </div>
-<!--
+                        </div>		
                         <div class="card-body">
+<!--	Delete target code if not requred 
+			    <div class="val-row">
+                                <span class="val-text">Target : <FONT style="FONT-SIZE: 9px; COLOR: green; weight: bold">G <= 17%</FONT>&nbsp; <FONT style="FONT-SIZE: 9px; COLOR: #ffbf00; weight: bold">A &gt;17% & <= 20%</FONT>&nbsp; <FONT style="FONT-SIZE: 9px; COLOR: #fa665d; weight: bold">R &gt; 20%</FONT></span>
+                               
+
+                            </div>
+
+-->
                             <div class="val-row">
-                                <span class="val-text">CDCS</span>
+                                <span class="val-text">No. of Exits (MTD)</span>
                                 <span class="val">
                                     <span><SpotfireControl id="30f5ae429c3e407db7347e8dd8506806" /></span>
                                     
@@ -2265,28 +2343,18 @@ Open positions pyramid starts -->
 
                             </div>
                             <div class="val-row">
-                                <span class="val-text">CTTS</span>
+                                <span class="val-text">No. of Exits (YTD)</span>
                                 <span class="val">
                                     <span><SpotfireControl id="41a88d39cf4e4248aef4611c088e874e" /></span>
                                     
                                 </span>
 
                             </div>
-			<div class="val-row">
-                                <span class="val-text">CORP</span>
-                                <span class="val">
-                                    <span><SpotfireControl id="d085ec73c0e645379ee8ac4ebf4cba82" /></span>
-                                    
-                                </span>
 
-                            </div>
-                            <div class="val-row">
-                                <span class="val-text">Early Dev</span>
-                                <span class="val">
-                                    <span><SpotfireControl id="2c4f6b992858424990734bdc41246bb8" /></span>
-                                </span>
 
-                            </div>
+			
+
+<!--
                             <div class="val-row">
                                 <span class="val-text">GCO</span>
                                 <span class="val">
@@ -2294,13 +2362,59 @@ Open positions pyramid starts -->
                                     
                                 </span>
 
-                            </div>
-                        </div> -->
+                            </div> -->
+                        </div>
                     </div>
                <!-- location metrics start -->
 
 
-			<!-- location metrics Deleted -->
+			<div class="width-helper width-helper-marginTop">
+                <div class="location-metric-container">
+                    <div class="location-metric-heading">Diversity Mix</div>
+                    <div class="location-metric-wrapper">
+                    <div class="location-metric-item">
+                            <div class="circle loc1Border">
+				<SpotfireControl id="ed48b0f2e3844907bd34d865fd73da60" />
+			    </div>
+                            <div class="circle-arrow"></div>
+                        <div class="rectanle-wrapper">
+                            <div class="rectangle loc1Bg">
+				Male
+			    </div>
+                            <div class="rectangle-arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="location-metric-item">
+                            <div class="circle loc2Border">
+				<SpotfireControl id="2b8638f46eca494bb1e337cac4ee7c52" />
+			   </div>
+                            <div class="circle-arrow"></div>
+                        <div class="rectanle-wrapper">
+                            <div class="rectangle loc2Bg">
+				Female
+			</div>
+                            <div class="rectangle-arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="location-metric-item">
+                            <div class="circle loc3Border">
+				<SpotfireControl id="426da57b409a4ee4a60266340570a313" />
+			</div>
+                            <div class="circle-arrow"></div>
+                        <div class="rectanle-wrapper">
+                            <div class="rectangle loc3Bg">
+				Not Disclosed
+			  </div>
+                            <div class="rectangle-arrow"></div>
+                        </div>
+                    </div>
+
+
+                    </div>
+                </div>
+</div>
 
 
                 <!-- location metrics end -->
@@ -2310,7 +2424,7 @@ Open positions pyramid starts -->
 <div class="width-helper">
     <div class="tenure-container">
         <div class="tenure-headings tenure-title-adjustment">
-            <div class="tenure-heading1 flex60">
+            <div class="tenure-heading1">
 
                 <span class="displayInlineBlock tenure-title-color">Tenure Range (Years)</span>
             </div>
@@ -2392,13 +2506,18 @@ Open positions pyramid starts -->
                             <div class="source-mix-heading">Exit Reason - YTD</div>
                             <div id="exit-reasons" class="source-mix-body exit-reason-height">
                             </div>
-			    <div id="otherEmployment" class="displayNone"><SpotfireControl id="47ac2f1a1efa401da47e7505f7d708d2" /></div>
+				<div id="BetterOpportunity" class="displayNone"><SpotfireControl id="47ac2f1a1efa401da47e7505f7d708d2" /></div>
                                 <div id="personalReasons" class="displayNone"><SpotfireControl id="938069722d904daeaab5760dba5f6632" /></div>
-                                <div id="relocation" class="displayNone"><SpotfireControl id="47654ea640fa4a7d8231db1bba8eb39b" /></div>
-                 
+                                <div id="dJob" class="displayNone"><SpotfireControl id="47654ea640fa4a7d8231db1bba8eb39b" /></div>
                                 <div id="dPay" class="displayNone"><SpotfireControl id="3f148e446a2a47e6b5b3a3d457b67ead" /></div>
-                                <div id="dJob" class="displayNone"><SpotfireControl id="fbd9705708544d57bacb74a3ca1f84b4" /></div>
-                                <div id="workerComp" class="displayNone"><SpotfireControl id="afb70f020bef41319d619550a299d4f4" /></div>
+                                <div id="workerComp" class="displayNone"><SpotfireControl id="fbd9705708544d57bacb74a3ca1f84b4" /></div>
+				<div id="Retirements" class="displayNone"><SpotfireControl id="afb70f020bef41319d619550a299d4f4" /></div>
+                                <div id="relocation" class="displayNone"><SpotfireControl id="41480a80f0ad4a03a20c317ceb697065" /></div>
+                                <div id="OtherEmployment" class="displayNone"><SpotfireControl id="0d6d244bd55e453d8cea3a539fae85e9" /></div>
+                                <div id="ReturntoSchool" class="displayNone"><SpotfireControl id="3f7244c070bf4cc18d15d14e6918c27a" /></div>
+                                <div id="JobAbandonment" class="displayNone"><SpotfireControl id="530ad8b11c344284bb90c1e61f9682a4" /></div>				
+				
+                                
 			    </div>
                     </div>
 <!-- Exit Reason  end -->
@@ -2561,6 +2680,14 @@ Open positions pyramid starts -->
 		var grade111Val = '';
 		var grade112Val = '';
 		var grade116Val = '';
+	$("#gradeCWR .left-val").on('DOMSubtreeModified', function() {
+		var hcCWRnumwithcama=$(this).text();
+		var hcCWRnumwithoutcama=hcCWRnumwithcama.replace(",","");
+	    if (!isNaN(parseInt(hcCWRnumwithoutcama))) {
+		gradeCWRVal = parseInt(hcCWRnumwithoutcama);
+		redrawPyramid();
+	    }
+	})
 
 	$("#grade101 .left-val").on('DOMSubtreeModified', function() {
 		var hc101numwithcama=$(this).text();
@@ -2604,16 +2731,17 @@ Open positions pyramid starts -->
 	})
 
 	function redrawPyramid() {
-		if(!isNaN(grade101Val) && !isNaN(grade108Val) && !isNaN(grade111Val) && !isNaN(grade112Val) && !isNaN(grade116Val)
+		if(!isNaN(gradeCWRVal) && !isNaN(grade101Val) && !isNaN(grade108Val) && !isNaN(grade111Val) && !isNaN(grade112Val) && !isNaN(grade116Val)
 
 ) {
 
-var maxGradVal = Math.max(grade108Val,grade111Val,grade112Val,grade116Val,grade101Val);
-	$("#grade101 .pyramid-bar").css("width", ((grade101Val/maxGradVal) * 100) + '%');
+var maxGradVal = Math.max(grade108Val,grade111Val,grade112Val,grade116Val,grade101Val,gradeCWRVal);
+$("#grade101 .pyramid-bar").css("width", ((grade101Val/maxGradVal) * 100) + '%');
 $("#grade108 .pyramid-bar").css("width", ((grade108Val/maxGradVal) * 100) + '%');
 $("#grade111 .pyramid-bar").css("width", ((grade111Val/maxGradVal) * 100) + '%');
 $("#grade112 .pyramid-bar").css("width", ((grade112Val/maxGradVal) * 100) + '%');
 $("#grade116 .pyramid-bar").css("width", ((grade116Val/maxGradVal) * 100) + '%');
+$("#gradeCWR .pyramid-bar").css("width", ((gradeCWRVal/maxGradVal) * 100) + '%');
 	
 		}
 
@@ -3257,12 +3385,16 @@ $("#atrGrade116 .pyramid-bar").css("width", ((atrGrade116Val/maxAtrGradVal) * 10
     
     
         var exitReasonMap = [
-            {'otherEmployment': {label: 'Other Employment', val: ''}}, 
-            {'personalReasons': {label: 'Personal', val: ''}},
-            
+            {'BetterOpportunity': {label: 'Better Opportunity', val: ''}}, 
+            {'personalReasons': {label: 'Personal', val: ''}},            
             {'relocation': {label: 'Relocation', val: ''}},
             {'dPay': {label: 'Dissatisfied with Pay', val: ''}},
-            {'dJob': {label: 'Dissatisfied with Job', val: ''}}, 
+            {'dJob': {label: 'Dissatisfied with Job', val: ''}},
+	    {'Retirements': {label: 'Retirement', val: ''}},
+	    
+	    {'OtherEmployment': {label: 'Other Employment', val: ''}},
+	    {'ReturntoSchool': {label: 'Return to School', val: ''}},
+	    {'JobAbandonment': {label: 'Job Abandonment', val: ''}},
             {'workerComp': {label: 'Worker Compensation - Other', val: ''}},
 
         ];
@@ -3270,12 +3402,12 @@ $("#atrGrade116 .pyramid-bar").css("width", ((atrGrade116Val/maxAtrGradVal) * 10
 
 
     
-        $("#otherEmployment").on('DOMSubtreeModified', function () {
+        $("#BetterOpportunity").on('DOMSubtreeModified', function () {
             if (!isNaN(parseInt($(this).text()))) {
                 for(var i=0; i< exitReasonMap.length; i++) {
                     var srcMxEle = exitReasonMap[i];
                     var srcMxEleKey = Object.keys(srcMxEle)[0];
-                    if(srcMxEleKey == 'otherEmployment') {
+                    if(srcMxEleKey == 'BetterOpportunity') {
                         exitReasonMap[i][srcMxEleKey]['val'] = parseInt($(this).text());
                         break;
                     }
@@ -3334,6 +3466,60 @@ $("#atrGrade116 .pyramid-bar").css("width", ((atrGrade116Val/maxAtrGradVal) * 10
                     var srcMxEle = exitReasonMap[i];
                     var srcMxEleKey = Object.keys(srcMxEle)[0];
                     if(srcMxEleKey == 'dJob') {
+                        exitReasonMap[i][srcMxEleKey]['val'] = parseInt($(this).text());
+                        break;
+                    }
+                }
+                redrawExitReason();
+            }
+        })
+
+        $("#Retirements").on('DOMSubtreeModified', function () {
+            if (!isNaN(parseInt($(this).text()))) {
+                for(var i=0; i< exitReasonMap.length; i++) {
+                    var srcMxEle = exitReasonMap[i];
+                    var srcMxEleKey = Object.keys(srcMxEle)[0];
+                    if(srcMxEleKey == 'Retirements') {
+                        exitReasonMap[i][srcMxEleKey]['val'] = parseInt($(this).text());
+                        break;
+                    }
+                }
+                redrawExitReason();
+            }
+        })
+        $("#OtherEmployment").on('DOMSubtreeModified', function () {
+            if (!isNaN(parseInt($(this).text()))) {
+                for(var i=0; i< exitReasonMap.length; i++) {
+                    var srcMxEle = exitReasonMap[i];
+                    var srcMxEleKey = Object.keys(srcMxEle)[0];
+                    if(srcMxEleKey == 'OtherEmployment') {
+                        exitReasonMap[i][srcMxEleKey]['val'] = parseInt($(this).text());
+                        break;
+                    }
+                }
+                redrawExitReason();
+            }
+        })
+        $("#ReturntoSchool").on('DOMSubtreeModified', function () {
+            if (!isNaN(parseInt($(this).text()))) {
+                for(var i=0; i< exitReasonMap.length; i++) {
+                    var srcMxEle = exitReasonMap[i];
+                    var srcMxEleKey = Object.keys(srcMxEle)[0];
+                    if(srcMxEleKey == 'ReturntoSchool') {
+                        exitReasonMap[i][srcMxEleKey]['val'] = parseInt($(this).text());
+                        break;
+                    }
+                }
+                redrawExitReason();
+            }
+        })
+
+        $("#JobAbandonment").on('DOMSubtreeModified', function () {
+            if (!isNaN(parseInt($(this).text()))) {
+                for(var i=0; i< exitReasonMap.length; i++) {
+                    var srcMxEle = exitReasonMap[i];
+                    var srcMxEleKey = Object.keys(srcMxEle)[0];
+                    if(srcMxEleKey == 'JobAbandonment') {
                         exitReasonMap[i][srcMxEleKey]['val'] = parseInt($(this).text());
                         break;
                     }
