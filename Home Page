@@ -947,8 +947,9 @@ flex-shrink: 1;
 }
 .tenure-bar-item {
 	display: flex;
-	margin-bottom: 4px;
+	/* margin-bottom: 4px; */
 	width: 100%;
+	align-items:center;
 }
 .tenure-bar-item:last-child {
 	margin: 0px;
@@ -979,7 +980,14 @@ background-color: black;
 	margin-top:12px;
 
 }
-
+.tenure-axes {
+        width: 1px;
+        background-color: #000;
+	padding-bottom:18px;
+    }
+    .tenure-label {
+         flex: 0 0 40px;
+    }
 .diversity-container {
 	display: flex;
 	align-items: center;
@@ -1772,30 +1780,47 @@ flex-wrap:wrap;
 <div class="tnure-body">
 <div class="tenure-bar-container flexWrap flex60">
 <div class="acceptance-bar-container">
+<!--
 <div class="vertical-axes">&nbsp;
-</div>
+</div> -->
 <div class="tenure-bar-wrapper">
 	<div id="tenure16" class="tenure-bar-item">
+		<div class="tenure-label">16+</div>
+		<div class="tenure-axes"></div>
 		<div class="tenurebar tenure-bar-color6">&nbsp;</div>
 		<div class="tenureval"><SpotfireControl id="96d644e1c24d489698afff3d8e0c152f" /></div>
 	</div>
 	<div id="tenure11" class="tenure-bar-item">
+		<div class="tenure-label">11 - 15</div>
+		<div class="tenure-axes"></div>
 		<div class="tenurebar tenure-bar-color5">&nbsp;</div>
 		<div class="tenureval"><SpotfireControl id="d3b89dd138ff43388a70ad11c979d44d" /></div>
 	</div>
 	<div id="tenure6" class="tenure-bar-item">
+		<div class="tenure-label">6 - 10</div>
+		<div class="tenure-axes"></div>
+
 		<div class="tenurebar tenure-bar-color4">&nbsp;</div>
 		<div class="tenureval"><SpotfireControl id="adfcc1fc5548441687d369d7d0d73979" /></div>
 	</div>
 	<div id="tenure3" class="tenure-bar-item">
+		<div class="tenure-label">3 - 5</div>
+		<div class="tenure-axes"></div>
+
 		<div class="tenurebar tenure-bar-color3">&nbsp;</div>
 		<div class="tenureval"><SpotfireControl id="494fd22cdff2455483d5f42a35263a07" /></div>
 	</div>
 	<div id="tenure1" class="tenure-bar-item">
+		<div class="tenure-label">1 - 2</div>
+		<div class="tenure-axes"></div>
+
 		<div class="tenurebar tenure-bar-color2">&nbsp;</div>
 		<div class="tenureval"><SpotfireControl id="9effc893bc9d48dcbe45551d80f19c29" /></div>
 	</div>
 	<div id="tenure0" class="tenure-bar-item">
+		<div class="tenure-label"><1</div>
+		<div class="tenure-axes"></div>
+
 		<div class="tenurebar tenure-bar-color1">&nbsp;</div>
 		<div class="tenureval"><SpotfireControl id="6c1e09de87e74fd69133c97e130e90f2" /></div>
 		
