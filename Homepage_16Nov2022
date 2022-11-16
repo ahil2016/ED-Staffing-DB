@@ -1106,7 +1106,7 @@ background:linear-gradient(to right, #BD87D3, #8e44ad);
 	display: flex;
 	height: fit-content;
 	width: 100%;
-	padding-bottom:40px;
+	padding-bottom:16px;
 	
 }
 .acceptance-bar-wrapper {
@@ -1127,8 +1127,8 @@ margin-top:17px;
 
 .acceptance-card-container .tnure-body{
 
-padding-top:29px;
-padding-bottom:21px;
+padding-top:15px;
+padding-bottom:0px;
 }
 
 .acceptance-title-background{
@@ -1567,6 +1567,40 @@ background-color: rgb(69,122,199);
 .regionBgCol3{
 background-color: rgb(79,68,76);
 }
+
+
+.regionBorderCol{
+
+    border:2px solid #a8b4ef;
+
+}
+.regionBorderCol1{
+	border:2px solid rgb(59, 74, 80);
+}
+
+.regionBorderCol2{
+	border:2px solid rgb(69,122,199);
+}
+
+.regionBorderCol3{
+ border:2px solid rgb(79,68,76);
+}
+
+
+
+.regionBorderCol1+.circle-arrow {
+    border-top-color: rgb(59, 74, 80);
+}
+.regionBorderCol2+.circle-arrow {
+    border-top-color: rgb(69,122,199);
+}
+.regionBorderCol3+.circle-arrow {
+    border-top-color: rgb(79,68,76);
+}
+.region4Border+.circle-arrow {
+    border-top-color: rgb(184,179,168);
+}
+
 
 .decline-reasons{
 
@@ -2322,7 +2356,7 @@ align-items: center;
                     <div class="location-metric-heading regionBgCol">Region Split</div>
                     <div class="location-metric-wrapper">
                     <div class="location-metric-item">
-                            <div class="circle loc1Border">
+                            <div class="circle regionBorderCol1">
 				<SpotfireControl id="d8b60942a16845b58c3ea09078ca62c5" />
 			    </div>
                             <div class="circle-arrow"></div>
@@ -2335,7 +2369,7 @@ align-items: center;
                     </div>
 
                     <div class="location-metric-item">
-                            <div class="circle loc2Border">
+                            <div class="circle regionBorderCol2">
 				<SpotfireControl id="57076beec3294a619a5ce3d76ebc3c95" />
 			   </div>
                             <div class="circle-arrow"></div>
@@ -2348,7 +2382,7 @@ align-items: center;
                     </div>
 
                     <div class="location-metric-item">
-                            <div class="circle loc3Border">
+                            <div class="circle regionBorderCol3">
 				<SpotfireControl id="7d8f18059e0e42b5b8f88cb307f4f7b2" />
 			</div>
                             <div class="circle-arrow"></div>
